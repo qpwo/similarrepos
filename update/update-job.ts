@@ -12,7 +12,7 @@ import { topSimilar } from './top-similar'
 import { log } from './util'
 
 const WEEK = 7 * 24 * 60 * 60 * 1000
-const expiredDate = new Date(Date.now() - 12 * WEEK)
+const expiredDate = new Date(Date.now() - 4 * WEEK)
 const LOG_FREQUENCY = 1000
 const NUM_PARALLEL_PULLERS = 5
 

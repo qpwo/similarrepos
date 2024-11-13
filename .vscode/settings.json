@@ -7,7 +7,8 @@
         "garbage/": true,
         "ignore/gazerCount.json": true,
         "node_modules/": true,
-        "**/*.v8": true
+        "**/*.v8": true,
+        "**/*.csv": true
     },
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true

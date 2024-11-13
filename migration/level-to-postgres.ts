@@ -1,9 +1,10 @@
 import { appendFileSync, createWriteStream, rmSync } from 'fs'
 import * as lev from '../update/db'
 import { BigMap } from './bigmap'
-const MAX_ROWS = 100_000_000
-const LOG_FREQUENCY = 50_000
+const MAX_ROWS = 10_000
+const LOG_FREQUENCY = 50
 
+const BATCH_SIZE = 1000
 // a Map can't do more than about 17 million entries apparently
 const idOf = new BigMap() as Map<string, number>
 // const idOf: Record<string, number> = {}
